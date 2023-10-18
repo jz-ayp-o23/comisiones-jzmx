@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "Test1",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python3 comisiones.py",
+      "input": "1000\r\n2000\r\n3000\r\n4000\r\n5000",
+      "output": "15000(\n|.)*750",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test2",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python3 comisiones.py",
+      "input": "10000\r\n20000\r\n30000\r\n40000\r\n50000",
+      "output": "150000(\n|.)*9000",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test3",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python3 comisiones.py",
+      "input": "20000\r\n0\r\n0\r\n0\r\n0",
+      "output": "20000(\n|.)*1000",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test4",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python3 comisiones.py",
+      "input": "2000\r\n2000\r\n2000\r\n10000\r\n4001",
+      "output": "20001(\n|.)*1200",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test5",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python3 comisiones.py",
+      "input": "10.0\r\n20.0\r\n102.5\r\n1100.0\r\n2340.0",
+      "output": "3572.5(\n|.)*178.625",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}
