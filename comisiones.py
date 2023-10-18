@@ -1,15 +1,20 @@
 """
-Inserta el encabezado aquí y escribe tu código abajo
+Comisiones de un vendedor.
 """
 
-# Declaraciones
-CONSTANTE = valor
-
 # Entradas
-entrada = input()
+ventas = 0
+for dia in ["lunes", "martes", "miércoles", "jueves", "viernes"]:
+    ventas += float(input(f"Ventas {dia}: "))
 
 # Proceso
-
+if ventas > 20_000:
+    porcentaje = 6
+else:
+    porcentaje = 5
+comision = ventas * porcentaje / 100
 
 # Salidas
-print(salida)
+print()
+print("Ventas totales:", ventas)
+print(f"Comisión ({porcentaje}%): {comision}")
